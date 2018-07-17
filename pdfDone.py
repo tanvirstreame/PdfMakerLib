@@ -2,7 +2,7 @@ from reportlab.lib.pagesizes import letter
 from reportlab.platypus import SimpleDocTemplate, Paragraph
 from reportlab.lib.styles import getSampleStyleSheet
  
-def hello(fileName,text):
+def PDFMake(fileName,text):
     doc = SimpleDocTemplate(fileName+".pdf",
                             pagesize=letter,
                             rightMargin=72,
@@ -18,4 +18,4 @@ def hello(fileName,text):
     doc.build(flowables)
  
 
-hello("12","qw")
+
